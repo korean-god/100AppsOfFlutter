@@ -30,7 +30,7 @@ class MyFirstPage extends StatelessWidget {
             Navigator.push(
               context2,
               MaterialPageRoute(
-                builder: (context) => MySecondPage(),
+                builder: (_) => MySecondPage(), // _ : Not used
               ),
             );
           },
