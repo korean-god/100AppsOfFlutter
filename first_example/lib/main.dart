@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(initialRoute: '/', routes: {
-      '/': (context) => ScreenA(),
+      '/': (context) => Screen_A(),
       '/b': (context) => ScreenB(),
       '/c': (context) => ScreenC(),
     });
