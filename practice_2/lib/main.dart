@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:practice_2/homepage.dart';
+import 'package:practice_2/nextpage.dart';
 
-void main() {
-  runApp(const MainApp());
+void main(List<String> args) {
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/a': (context) => NextPage(),
+      },
     );
   }
 }
